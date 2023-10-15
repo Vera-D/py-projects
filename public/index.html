@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to DOCX Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Convert PDF to DOCX</h1>
+    <p>Select a PDF file and click Convert.</p>
+
+    <form action="/your_server_endpoint_here" method="post" enctype="multipart/form-data">
+        <div class="upload-btn-wrapper">
+            <button type="button" class="btn">Choose a PDF</button>
+            <input type="file" name="pdfFile" accept=".pdf" required />
+        </div>
+        <br> <!-- Some spacing between buttons -->
+        <button type="submit" class="btn">Convert</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
